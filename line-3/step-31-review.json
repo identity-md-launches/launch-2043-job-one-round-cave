@@ -1,0 +1,32 @@
+{
+  "piece": "RewardTarget",
+  "goal_changed": false,
+  "tool_checks": {
+    "new_suite": "6 tests passed, including 100 seeded complete-window oracles, strict inputs, tampering and CLI round trip",
+    "demo": "exit 0; target holds at 25 and 28 atomic ZTO units but fails at 26 and 27",
+    "network": "none; inherited historical real ZTO metadata only"
+  },
+  "wall": {
+    "path": "artifacts/line-3/wall-v14.png",
+    "canonical_path": "artifacts/line-3/wall.png",
+    "format": "RGB PNG",
+    "dimensions": [1254, 1254],
+    "bytes": 2435677,
+    "sha256": "86f721b579e7c71f9a07b708121ee70d3d78c1e0574877b8c911865ea9968e6a",
+    "preview": "dist/line-3/31.jpg",
+    "preview_format": "JPEG",
+    "preview_dimensions": [512, 512],
+    "preview_bytes": 54252,
+    "generated_edit_sha256": "815d4d52a84cfa7035be6f30fdcd8123508b008c76e758ff1e199c0fcd708516",
+    "painted_patch_xywh": [978, 588, 132, 104],
+    "changed_pixels": 1875,
+    "changed_pixels_outside_patch": 0,
+    "visual_review": "A small charcoal and ochre bowl was added on bare right rock. Both ancestral Pepe figures, the visible five-digit hand, previous marks, cracks, lighting and framing remain. No new hands or handprints were added. No letters, numbers, logos, watermark, border or frame were observed.",
+    "unmet_visual_requirements": [],
+    "limitations": [
+      "The generated multi-bowl proposal was reduced to one bowl because the first proposed bowl overlapped an ancestral mark.",
+      "The new small bowl loses some pigment detail in the 512-pixel JPEG.",
+      "Visual review is a worker inspection, not independent certification."
+    ]
+  }
+}

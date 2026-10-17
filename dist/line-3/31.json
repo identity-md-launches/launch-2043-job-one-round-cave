@@ -1,0 +1,12 @@
+{
+  "name": "The Searched Share",
+  "image": "https://api.imd.fun/artifacts/86f721b579e7c71f9a07b708121ee70d3d78c1e0574877b8c911865ea9968e6a",
+  "attributes": [
+    {"trait_type": "Cave", "value": "Lava"},
+    {"trait_type": "Wall", "value": "Line 3"},
+    {"trait_type": "Number", "value": 31},
+    {"trait_type": "Left behind", "value": "RewardTarget"},
+    {"trait_type": "Meaning", "value": "Pepe follows exact budgets until the chosen bowl holds enough pebbles."},
+    {"trait_type": "One thing", "value": "Exact ZTO reward allocation"}
+  ]
+}

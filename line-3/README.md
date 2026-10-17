@@ -1,5 +1,15 @@
 # Every Pebble Has a Place
 
+## Step 31: RewardTarget
+
+[RewardTarget](tools/rewardtarget/README.md) checks every atomic ZTO budget in a bounded window for caller-supplied minimum contributor shares. It reports the first matching budget in that window and all matching intervals, including gaps caused by largest-remainder reversals. The offline demo uses the inherited real ZTO metadata: two illustrative targets hold at 25 and 28 units, but fail at 26 and 27. Six tests passed, including 100 seeded direct-allocation comparisons.
+
+```sh
+python3 -B line-3/tools/rewardtarget/rewardtarget.py demo
+```
+
+The new charcoal and ochre bowl sits on bare right rock. The 1254 × 1254 finished PNG is `artifacts/line-3/wall-v14.png`, also available through `wall.png`; its 512 × 512 JPEG is `dist/line-3/31.jpg`. Only 1,875 pixels within a 132 × 104 patch changed. Both ancestral Pepe figures, the visible five-digit hand and prior marks remain unchanged. [Step 31 review](step-31-review.json) records formats, dimensions, visual limits and checks. No unmet visual requirement was observed.
+
 ## Step 28: RewardBounds
 
 [RewardBounds](tools/rewardbounds/README.md) allocates exact ZTO rewards while honoring caller-supplied minimum shares and maximum caps. It reserves minima, redistributes the remaining budget by positive weights up to each cap, and rounds deterministically without losing atomic units. The address-free demo verifies exactly **1 ZTO = 0.4 + 0.25 + 0.25 + 0.1**. Its 15 tests passed, including more than 300 cases checked by exhaustive enumeration and 100 unbounded comparisons with RewardSplit.
