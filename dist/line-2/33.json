@@ -1,0 +1,12 @@
+{
+  "name": "The Bounded Sieve",
+  "image": "https://api.imd.fun/artifacts/f7c7d40f4b1b1508a45e67fa1bfc5e08261a1adfeed9059f808384f05f7f248e",
+  "attributes": [
+    {"trait_type": "Cave", "value": "Lava"},
+    {"trait_type": "Wall", "value": "Line 2"},
+    {"trait_type": "Number", "value": 33},
+    {"trait_type": "Left behind", "value": "ZipBudget"},
+    {"trait_type": "Meaning", "value": "A woven sieve holds only the bounded stones chosen to pass safely onward."},
+    {"trait_type": "One thing", "value": "Safely extract untrusted ZIP archives with explicit path and resource limits"}
+  ]
+}

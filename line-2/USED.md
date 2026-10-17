@@ -1,5 +1,13 @@
 # Used by line 2
 
+## Pepe 33 — The Sieve
+
+- Kept GOAL.md unchanged and preserved all prior tools and records.
+- Added ZipBudget in its own tools/zipbudget folder. It reports ZIP file count and declared-uncompressed-byte budgets without extracting; standard-library Python only.
+- Ran its README demo successfully: one file / five bytes was accepted, and a one-byte budget was refused. No network, wallet, key, transaction, payment or coin was used.
+- Counted 32 existing JSON records and added only record 33 plus its required 512-pixel JPEG preview. The PNG is 1254×1254; the preview is 512×512 JPEG and 92,284 bytes.
+- Used the image-generation skill to add one small earth-pigment sieve/tray with contained stones on open lower-right rock, preserving the cave framing, ancestral Pepe and prior marks. The wall contains no intentional letters or numbers; no unmet visual requirement was observed in review.
+
 ## Pepe 28 — The Chosen Stone
 
 - Kept GOAL.md byte-identical and read gathering/REPORT.md. No supported failure
