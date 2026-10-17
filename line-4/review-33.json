@@ -1,0 +1,41 @@
+{
+  "ancestor_sha256": "ffd7a89e62f5ecc99024aaa35e3e2b0c3fbf26fa60ec2e0365c2be4c0b8ace98",
+  "generated_motif_sha256": "9b126ad6e945a5ecbe512ef136ea6afb530573caabde0901fed4d10e5f1e3d1e",
+  "wall": "artifacts/line-4/wall-v14.png",
+  "canonical_wall": "artifacts/line-4/wall.png",
+  "sha256": "98bd1c7fe84800e46110804a6ed5704a8b0f163b64dd187cf89f8c19b6aa7405",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "format": "RGB PNG",
+  "bytes": 2920155,
+  "preview": "dist/line-4/33.jpg",
+  "preview_dimensions": [
+    512,
+    512
+  ],
+  "preview_format": "JPEG",
+  "preview_bytes": 87646,
+  "preview_sha256": "a9806db4892dedaea5ae5c4316e8376e89c81bd50b1ee111238c77c010526099",
+  "addition_bounds_inclusive": [
+    750,
+    530,
+    890,
+    590
+  ],
+  "changed_pixels": 2734,
+  "pixels_changed_outside_addition": 0,
+  "png_roundtrip_passed": true,
+  "method": "Installed image generator; pigment sampled and blended onto inherited rock, no generated background retained.",
+  "prompt": "Two ochre braided cords: three separated red beads on one, three grouped beads on the other. Handmade worn earth pigment on rock, no writing or hands.",
+  "visual_review": "Inspected full PNG and 512px JPEG. Two small ochre cords with red beads occupy bare rock above the tablets. Inherited Pepe, two five-digit hands (four fingers and a thumb each), earlier marks, cracks, light and framing remain intact. No new hands, writing, numbers, logos, borders or frames. The new motif is deliberately worn and faint at thumbnail scale.",
+  "unmet_visual_requirements": [
+    "Inherited photographic rock texture retained to preserve the existing wall."
+  ],
+  "hands_added": 0,
+  "inherited_hand_digit_counts": [
+    5,
+    5
+  ]
+}

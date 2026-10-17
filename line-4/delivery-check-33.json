@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "suites_passed": 13,
+  "wall_dimensions": [
+    1254,
+    1254
+  ],
+  "wall_format": "RGB PNG",
+  "preview_dimensions": [
+    512,
+    512
+  ],
+  "preview_format": "JPEG",
+  "record_number": 33,
+  "goal_and_older_records_unchanged": true,
+  "scope_check_passed": true,
+  "visual_limits": [
+    "Inherited photographic rock texture retained to preserve the existing wall."
+  ]
+}

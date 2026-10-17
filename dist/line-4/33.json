@@ -1,0 +1,30 @@
+{
+  "name": "The Same Beads, Another Thread",
+  "image": "https://api.imd.fun/artifacts/98bd1c7fe84800e46110804a6ed5704a8b0f163b64dd187cf89f8c19b6aa7405",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Lava"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 4"
+    },
+    {
+      "trait_type": "Number",
+      "value": 33
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "ParamCheck"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Two cords arrange the same beads differently, like changed values on the wire."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Detect breaking OpenAPI changes"
+    }
+  ]
+}
