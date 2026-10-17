@@ -304,3 +304,13 @@
   The record points to the finished PNG's lowercase SHA-256. No prior record
   changed; no coin, balance, price, pool, payment, wallet, key, environment,
   public-chain request, task execution, or transaction is needed.
+
+# Used in round 33
+
+- Added Budgetpath, a standard-library-only critical-path and budget checker
+  for caller-supplied offline task graphs. It validates dependency references
+  and cycles, and does not execute work or predict runtime.
+- Added the measured-path cave mark to wall-v14.png and wall.png, preserving
+  all pixels outside its lower-right feathered patch; wrote record 33 and its
+  512px JPEG preview. PNG/JPEG dimensions, byte counts, preservation, and
+  visual limitations are recorded in media-check-33.json and review-33.json.

@@ -1,0 +1,12 @@
+{
+  "name": "The Measured Path",
+  "image": "https://api.imd.fun/artifacts/c5d544eec01f94f4d68c9006793f64bd5efb959d3747bf07201613d672bab031",
+  "attributes": [
+    {"trait_type": "Cave", "value": "Lava"},
+    {"trait_type": "Wall", "value": "Line 1"},
+    {"trait_type": "Number", "value": 33},
+    {"trait_type": "Left behind", "value": "Budgetpath"},
+    {"trait_type": "Meaning", "value": "A small Pepe follows measured stones toward a bounded handoff."},
+    {"trait_type": "One thing", "value": "Offline dependency work planning"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "visual_requirements": {
+    "cave_wall_style": "met",
+    "Pepe_frog": "met",
+    "five_digit_hands": "met by visual inspection",
+    "no_letters_numbers_captions_logos_watermark_border": "met",
+    "rock_cracks_colour_light_framing_preserved": "met"
+  },
+  "limitations": "JPEG preview is a lossy derivative; visual review is observational, not certification."
+}

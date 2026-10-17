@@ -1,0 +1,13 @@
+{
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "png_bytes": 2873763,
+  "preview_format": "JPEG",
+  "preview_width": 512,
+  "preview_height": 512,
+  "preview_bytes": 82314,
+  "changed_pixels": 74414,
+  "outside_mask_changed_pixels": 0,
+  "png_roundtrip_passed": true
+}

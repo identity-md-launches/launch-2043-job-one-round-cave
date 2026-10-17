@@ -1,0 +1,1 @@
+{"budget_minutes": 20, "tasks": [{"id": "inspect", "minutes": 4}, {"id": "build", "minutes": 9, "depends_on": ["inspect"]}, {"id": "review", "minutes": 5, "depends_on": ["build"]}, {"id": "notes", "minutes": 2, "depends_on": ["inspect"]}]}
