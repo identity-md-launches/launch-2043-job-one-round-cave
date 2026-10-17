@@ -1,39 +1,35 @@
-# Gathering 30 — One Bowl for Four
+# Gathering 33 — Four Seeds Kept Together
 
-Reviewed all four lines and shared line 4's ServerCheck through the standalone
-line 2 ZIP-to-OpenAPI comparator. Read REPORT.md for results and limitations.
+Reviewed all four lines and shared the newest API checks through approved ZIP
+snapshots. `REPORT.md` gives the per-line results and limits. Nothing in a line
+folder was changed. No coin or deployment is required.
 
-From the repository root:
-
-```sh
-python3 -B gathering/check_tools_30.py
-python3 -B gathering/check_shared_30.py
-python3 -B gathering/check_delivery_30.py
-```
-
-Observed: 83 line commands passed at expected exits, including 543 unittest
-cases. Shared isolation checks passed 53 tests and both demos. One command to
-see the new reusable handoff:
+Run from the repository root with Python standard library only:
 
 ```sh
-python3 -B shared/api_bundle/server_demo.py
+python3 -B shared/api_bundle/parameter_demo.py
+python3 -B gathering/check_tools_33.py
+python3 -B gathering/check_shared_33.py
+python3 -B gathering/check_delivery_33.py
 ```
 
-This compares approved ZIP snapshots containing historical public IMD data,
-then detects a clearly hypothetical destination migration. No service
-operation or destination is contacted, and no member is extracted. All runtime
-dependencies are ordinary standard-library Python files in the shared folder.
+Observed: 90 line commands passed, including 637 unittest cases and inline
+checks. The standalone shared folder passed 53 existing and eight new tests
+and three demos. A saved fresh public IMD description matched the historical
+capture, comparing five operations with zero findings. These are local checks;
+they do not prove runtime compatibility or certify archive safety.
 
-The built-in imagegen tool produced a four-stone pigment mark. A Node pass
-placed it on bare upper-left rock while preserving all pixels outside the
-patch. Full output: `artifacts/gathering/wall-v11.png` (1254 × 1254 RGB PNG),
-also available at `wall.png`. Preview: `dist/gathering/30.jpg` (512 × 512 JPEG,
-88,070 bytes). Record: `dist/gathering/30.json`. Both wall paths remain untracked
-for the uploader. The gallery and four goals are regenerated.
+The built-in image tool added a worn ochre pouch holding four chalk seeds.
+Only its small bare-rock patch was composited into the inherited wall; all
+outside pixels remain exact. `preservation-33.json` records the bounds,
+changed-pixel count and hashes. The full 1254 × 1254 RGB PNG is
+`artifacts/gathering/wall-v14.png`, also linked as `wall.png`; the preview is
+`dist/gathering/33.jpg`, a 512 × 512 JPEG under 100 KB. The numbered JSON record
+links the exact PNG hash. `dist/index.html` lists every recorded wall by line,
+newest first, and `dist/goals.json` repeats the four existing goals.
 
-Prompt: four irregular ochre pebbles in a shallow charcoal bowl; worn handmade
-earth pigment with transparent gaps; no background, text, numbers, logos or
-hands. Final visual inspection counted five digits on each inherited Pepe
-hand. No visual requirement was identified as unmet; inherited photographic
-rock texture and preview detail loss remain limitations. Full review and
-preservation counts are in `review-30.json` and `preservation-30.json`.
+Visual review: the existing Pepe retains five digits on each hand; the pouch
+adds no hand. No prohibited text, symbols, border or frame was added. No unmet
+visual requirement was observed; inherited photographic rock texture and
+preview detail loss remain limitations. The original wall and all ancestors
+outside the mark rectangle are unchanged, including rock, cracks and framing.

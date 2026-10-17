@@ -13,7 +13,7 @@ import time
 import zipfile
 import zlib
 
-from vendor import apidelta, oauthcheck, schemecheck, servercheck, safezip, zipgate
+from vendor import apidelta, oauthcheck, schemecheck, servercheck, paramcheck, safezip, zipgate
 
 MAX_ARCHIVE = 32 * 1024 * 1024
 
@@ -102,7 +102,7 @@ def read_bundle(path, member='openapi.json', expected_sha256=None, checkpoint=la
 
 def compare(old, new, member='openapi.json', old_sha256=None, new_sha256=None,
             seconds=None, cancelled=None, nodes=32000, directory_bytes=2097152,
-            oauth=False, servers=False):
+            oauth=False, servers=False, parameters=False):
     if seconds is not None:
         try:
             valid_seconds = (not isinstance(seconds, bool)
@@ -125,7 +125,7 @@ def compare(old, new, member='openapi.json', old_sha256=None, new_sha256=None,
     a, before = read_bundle(old, member, old_sha256, checkpoint, nodes, directory_bytes)
     b, after = read_bundle(new, member, new_sha256, checkpoint, nodes, directory_bytes)
     checkpoint()
-    report = (servercheck if servers else oauthcheck if oauth else schemecheck).compare(a, b)
+    report = (paramcheck if parameters else servercheck if servers else oauthcheck if oauth else schemecheck).compare(a, b)
     checkpoint()
     report['bundle_inputs'] = {'old': before, 'new': after}
     return report
@@ -143,11 +143,12 @@ def main():
     parser.add_argument('--seconds', type=float, help='cooperative time budget for the whole comparison')
     parser.add_argument('--oauth', action='store_true', help='also check declared OAuth flow and acquisition continuity')
     parser.add_argument('--servers', action='store_true', help='also check effective server destinations; includes OAuth checks')
+    parser.add_argument('--parameters', action='store_true', help='also check parameter wire formats, response headers and operation IDs; includes server and OAuth checks')
     args = parser.parse_args()
     try:
         report = compare(args.old, args.new, args.member, args.old_sha256,
                          args.new_sha256, args.seconds, nodes=args.nodes,
-                         directory_bytes=args.directory_bytes, oauth=args.oauth, servers=args.servers)
+                         directory_bytes=args.directory_bytes, oauth=args.oauth, servers=args.servers, parameters=args.parameters)
         print(json.dumps(report, indent=2, allow_nan=False))
         return {'breaking': 1, 'review_required': 3, 'no_detected_breakage': 0}[report['status']]
     except (ValueError, OSError, RuntimeError, EOFError, zipfile.BadZipFile,

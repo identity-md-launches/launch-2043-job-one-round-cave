@@ -1,0 +1,32 @@
+[
+  {
+    "command": "selftest.py",
+    "exit": 0,
+    "passed": true,
+    "evidence": "nged_with_inert_executable) ... ok\ntest_uniqueness_cli_break_review_and_error (__main__.BundleTests.test_uniqueness_cli_break_review_and_error) ... ok\ntest_uniqueness_invalid_boolean (__main__.BundleTests.test_uniqueness_invalid_boolean) ... ok\ntest_uniqueness_on_captured_public_api (__main__.BundleTests.test_uniqueness_on_captured_public_api) ... ok\ntest_uniqueness_response_and_openapi30 (__main__.BundleTests.test_uniqueness_response_and_openapi30) ... ok\ntest_wrong_digest_rejected_before_parsing (__main__.BundleTests.test_wrong_digest_rejected_before_parsing) ... ok\ntest_zip_traversal_refused_even_when_unselected (__main__.BundleTests.test_zip_traversal_refused_even_when_unselected) ... ok\n\n----------------------------------------------------------------------\nRan 53 tests in 7.603s\n\nOK\n"
+  },
+  {
+    "command": "parameter_selftest.py",
+    "exit": 0,
+    "passed": true,
+    "evidence": "ests.test_cli_all_four_exits) ... ok\ntest_crc_checks_unselected_file_before_analysis (__main__.ParameterBundleTests.test_crc_checks_unselected_file_before_analysis) ... ok\ntest_defaults_do_not_invent_wire_breakage (__main__.ParameterBundleTests.test_defaults_do_not_invent_wire_breakage) ... ok\ntest_inherited_header_identifier_and_server_findings_survive (__main__.ParameterBundleTests.test_inherited_header_identifier_and_server_findings_survive) ... ok\ntest_invalid_unchanged_parameter_refused (__main__.ParameterBundleTests.test_invalid_unchanged_parameter_refused) ... ok\ntest_wire_change_opt_in_and_exact_location (__main__.ParameterBundleTests.test_wire_change_opt_in_and_exact_location) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 1.058s\n\nOK\n"
+  },
+  {
+    "command": "demo.py",
+    "exit": 0,
+    "passed": true,
+    "evidence": "d49a71aa00e99032a4dbdfa81f7f231d0526bc4ca55e13\"\n          }\n        ],\n        \"all_payloads_crc_checked\": true\n      },\n      \"new\": {\n        \"archive_sha256\": \"b383d20cabfa303eac715bb2d3772647eed84cd20badce4e68beb625d249992a\",\n        \"approved_sha256_checked\": true,\n        \"preflight\": {\n          \"entries\": 1,\n          \"directory_bytes\": 63,\n          \"zip64\": false\n        },\n        \"member\": \"docs/openapi.json\",\n        \"member_sha256\": \"ff62404a449c7f263d2dd5345ec38b560648444a182a1ab484fef49ac22c7cba\",\n        \"checked_files\": [\n          {\n            \"path\": \"docs/openapi.json\",\n            \"bytes\": 24549,\n            \"sha256\": \"ff62404a449c7f263d2dd5345ec38b560648444a182a1ab484fef49ac22c7cba\"\n          }\n        ],\n        \"all_payloads_crc_checked\": true\n      }\n    }\n  }\n}\n"
+  },
+  {
+    "command": "server_demo.py",
+    "exit": 0,
+    "passed": true,
+    "evidence": "4f01283192d49a71aa00e99032a4dbdfa81f7f231d0526bc4ca55e13\"\n          }\n        ],\n        \"all_payloads_crc_checked\": true\n      },\n      \"new\": {\n        \"archive_sha256\": \"a1b93f546850be467605f023eeb0e683504d54553f998f278540babf18930987\",\n        \"approved_sha256_checked\": true,\n        \"preflight\": {\n          \"entries\": 1,\n          \"directory_bytes\": 58,\n          \"zip64\": false\n        },\n        \"member\": \"openapi.json\",\n        \"member_sha256\": \"4185291e36da1e951ca2d41d921ab74bcb5916bc44b13d6452b189fad2b82336\",\n        \"checked_files\": [\n          {\n            \"path\": \"openapi.json\",\n            \"bytes\": 24608,\n            \"sha256\": \"4185291e36da1e951ca2d41d921ab74bcb5916bc44b13d6452b189fad2b82336\"\n          }\n        ],\n        \"all_payloads_crc_checked\": true\n      }\n    }\n  }\n}\n"
+  },
+  {
+    "command": "parameter_demo.py",
+    "exit": 0,
+    "passed": true,
+    "evidence": "541b117037e6a20cc799e78588848804f3d88ba861dd8c\"\n          }\n        ],\n        \"all_payloads_crc_checked\": true\n      },\n      \"new\": {\n        \"archive_sha256\": \"219211b40edbd987f7373f22ff96693b1e1c98378255942861c13f90d529e544\",\n        \"approved_sha256_checked\": true,\n        \"preflight\": {\n          \"entries\": 1,\n          \"directory_bytes\": 63,\n          \"zip64\": false\n        },\n        \"member\": \"docs/openapi.json\",\n        \"member_sha256\": \"ebb8f94e195917f4d70df55f87216a06d190b69259b341af6f21f1da6fadff90\",\n        \"checked_files\": [\n          {\n            \"path\": \"docs/openapi.json\",\n            \"bytes\": 24698,\n            \"sha256\": \"ebb8f94e195917f4d70df55f87216a06d190b69259b341af6f21f1da6fadff90\"\n          }\n        ],\n        \"all_payloads_crc_checked\": true\n      }\n    }\n  }\n}\n"
+  }
+]

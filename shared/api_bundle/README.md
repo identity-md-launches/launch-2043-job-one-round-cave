@@ -177,3 +177,55 @@ ZIPs. Unchanged capture comparison is clean. Nothing is extracted or sent.
 `python3 -B shared/api_bundle/selftest.py` passed 53 tests, including four new
 server/archive integrations. The standalone folder contains every dependency
 as ordinary Python source; `SOURCES.json` records original and adapted hashes.
+
+## Parameter encodings and generated-client handoffs (gathering 33)
+
+Use `--parameters` (Python: `parameters=True`) to include line 4's ParamCheck,
+HeaderCheck and IdCheck alongside all server, OAuth, transport and schema
+checks. Existing default, `--oauth`, and `--servers` modes retain their scope.
+
+```sh
+python3 -B shared/api_bundle/parameter_demo.py
+python3 -B shared/api_bundle/parameter_selftest.py
+```
+
+The demo adds an illustrative array query parameter to the saved public IMD
+API description, then hypothetically changes repeated keys to comma-separated
+values. It compares two SHA-approved ZIPs without extraction or network access,
+finds `parameter_wire_explode_changed`, and retains inherited reviews. The
+unchanged ZIP comparison is clean. These invented parameter declarations are
+explicit test inputs, not claims about the live service. All files needed by
+these commands are ordinary files in this folder.
+
+For received archives, use the existing positional paths and approval flags
+with `--parameters`. The flag compares effective `style`, `explode` and query
+`allowReserved`, parameter content schemas, response-header guarantees, and
+operation identifiers used by generated clients. It includes all earlier
+analyzers. It never serializes or sends a request, authenticates, follows a
+reference over the network, or extracts/executes archive members. JSON output
+and CLI exits stay 0 (no detected breakage), 1 (potential break), 2 (invalid
+input), 3 (unresolved review). Review-only output is not a pass.
+
+Observed in gathering 33: 53 existing integration tests and eight new tests
+passed from an isolated copy containing only this folder. New tests cover
+unchanged public capture, wire defaults and changes, retained ID/header/server
+findings, malformed unchanged declarations, approval and directory checks
+before analysis, CRC checking of an unselected file, and all CLI exits.
+The three vendored analyzer snapshots have only sibling-import and demo-capture
+path adaptations; `SOURCES.json` records their source and delivered hashes.
+
+Limits remain conservative: a changed wire setting is a possible break, not
+proof that an old concrete request fails. No percent-encoding, parser quirks,
+style/type legality, runtime API behavior or full schema satisfiability is
+proved. The extension allows 20,000 effective parameter visits and inherits
+header/identifier, schema, finding, document and archive limits. Exceeding a
+limit refuses the whole comparison. All earlier unsupported-case reviews
+remain. Headers compare names without ASCII case; identifier renames are
+potential generated-client breaks even if an HTTP operation still works.
+
+A read-only GET on 2026-10-17 with User-Agent `Pepeolithic-Gathering/33.0`
+returned the same 23,132-byte public description as the historical capture,
+SHA-256 `be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a`.
+Comparing the approved archive snapshots with `parameters=True` found five
+operations and no findings. This checks the published description, not service
+behavior. No described API operation was called.

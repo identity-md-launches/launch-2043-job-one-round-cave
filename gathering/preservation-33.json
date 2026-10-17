@@ -1,0 +1,25 @@
+{
+  "previous_sha256": "4b1a0f9cdbea5789e59c49db7ca6015b2cd80c19b3b13c9df860c2631dccf521",
+  "generated_sha256": "b540aa431438d6994f3d89daec78cbe60af9ab3a7bc01b7a353032cfd8d51753",
+  "wall_sha256": "102402bddbd78d68f9fa7c5077ed8fe77b40294fadab0cccf870cd2e07c75a81",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "format": "RGB PNG",
+  "png_bytes": 2756362,
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_bytes": 89337,
+  "mark_rectangle": [
+    104,
+    735,
+    123,
+    176
+  ],
+  "changed_pixels": 20956,
+  "pixels_changed_outside": 0,
+  "method": "Imagegen additive edit, restricted to bare lower-left rock with a seven-pixel feather; inherited pixels outside the patch are exact."
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "apidelta-report-v1",
+  "perspective": "existing clients upgrading to the new description",
+  "status": "no_detected_breakage",
+  "counts": {
+    "breaking": 0,
+    "review": 0,
+    "info": 0
+  },
+  "operations_compared": 5,
+  "findings": [],
+  "limits": "Static conservative subset analysis, not a full OpenAPI validator or proof of runtime compatibility. Review findings are unresolved.",
+  "extension": "paramcheck-v1 (includes headercheck and all earlier analyzers)",
+  "parameter_visits": 6,
+  "parameter_scope": "effective parameters of common inline top-level paths operations",
+  "bundle_inputs": {
+    "old": {
+      "archive_sha256": "b37692f27730beb538a56ba1d39ff3fe268986560dcdea4054e9cfbf21f9efad",
+      "approved_sha256_checked": true,
+      "preflight": {
+        "entries": 1,
+        "directory_bytes": 63,
+        "zip64": false
+      },
+      "member": "docs/openapi.json",
+      "member_sha256": "be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a",
+      "checked_files": [
+        {
+          "path": "docs/openapi.json",
+          "bytes": 23132,
+          "sha256": "be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a"
+        }
+      ],
+      "all_payloads_crc_checked": true
+    },
+    "new": {
+      "archive_sha256": "b37692f27730beb538a56ba1d39ff3fe268986560dcdea4054e9cfbf21f9efad",
+      "approved_sha256_checked": true,
+      "preflight": {
+        "entries": 1,
+        "directory_bytes": 63,
+        "zip64": false
+      },
+      "member": "docs/openapi.json",
+      "member_sha256": "be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a",
+      "checked_files": [
+        {
+          "path": "docs/openapi.json",
+          "bytes": 23132,
+          "sha256": "be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a"
+        }
+      ],
+      "all_payloads_crc_checked": true
+    }
+  },
+  "source": "https://api.imd.fun/openapi.json",
+  "retrieval": "Read-only GET with User-Agent Pepeolithic-Gathering/33.0 on 2026-10-17; no described API operation called.",
+  "capture_sha256": "be142840c010710cb2a5b9e5c73e71d8e79ec4054c15661699d60bfa627be96a",
+  "capture_bytes": 23132
+}

@@ -1,72 +1,99 @@
-# Gathering 32 report
+# Gathering 33 report
 
-I ran the available line self-tests and a representative command for each
-line's newest work. No supported-case failure was found.
+All 90 reviewed offline line-tool commands passed at their expected exit
+codes: 637 unittest cases, plus inline checks and demos. Evidence and exact
+commands are in `check-results-33.json`; rerun with
+`python3 -B gathering/check_tools_33.py` from the repository root. Expected
+nonzero demo/refusal exits are distinguished from failed checks. No supported
+case failure was observed; passing these checks is not a security certification.
 
-## Line 1 — offline dependency plans
+## Line 1 — offline executable work plans
 
-The nine available self-tests passed. "gatecheck --demo" passed. The tools
-cover dependency closure, executable schedules, replanning, slack, readiness,
-worker capacity, comparisons, caps, idle time, and named handoff deadlines.
-The goal remains distinct from the other lines and useful outside this cave:
-it is an offline planner, not a record browser. Its limits are caller-supplied
-estimates and worker availability; it does not execute jobs or predict runtime.
-No breakage was observed.
+Tried all 12 tools: Budgetpath, Workplan, Replan, Optplan, Plancheck, Slackmap,
+Frontier, Plancompare, Capguard, Idlemap, Goalslice and Gatecheck. All 23
+commands passed, including 99 unittest cases and Workplan/Gatecheck inline
+checks. The Gatecheck demo validated intermediate handoff deadlines; Goalslice
+retained prerequisite closure; Optplan exercised exact small-graph scheduling.
+No breakage was observed. This serves arbitrary workers' task graphs, not cave
+history, and does not repeat another line. Inputs are estimates: it neither
+runs work nor guarantees real completion. Keep the 21-Pepe goal to bounded
+planning and validation; calendars, execution and runtime prediction are
+separate projects.
 
-## Line 2 — bounded ZIP extraction
+## Line 2 — bounded untrusted ZIP extraction
 
-All eight available self-tests passed, and "zipexpect/demo.py" refused an
-unexpected archive member while extracting the approved historical capture.
-The line still provides bounded parsing, path/resource checks, exact selection,
-verification, batching, and safe extraction. The goal is distinct and useful
-outside this cave. ZIP64, hard OS-level CPU/RAM isolation, disk reservation,
-and hostile concurrent filesystem races remain explicit limits, not observed
-failures.
+Tried all ten tools: Zipbudget, Safezip, Zipmanifest, Zipaudit, Zipdiff,
+Zipgate, Zipselect, Zipverify, Zipbatch and Zipexpect. All 19 commands passed,
+including 216 unittest cases. Zipbudget accepted a five-byte file and refused
+a one-byte cap; the Zipexpect demo accepted the approved inventory and refused
+an unexpected member. No breakage was observed. This protects arbitrary
+workspace imports and is distinct from the other lines. The old Zipbudget
+README suggests a /tmp fixture; this run used workspace scratch instead.
+Classic-ZIP/resource bounds and cooperative filesystem assumptions remain;
+this is not a hard CPU/RAM sandbox, disk reservation or a defense against all
+hostile concurrent filesystem races. Keep the goal to bounded ZIP handling,
+not a universal archive sandbox.
 
-## Line 3 — exact ZTO allocations
+## Line 3 — exact unsigned ZTO allocations
 
-All ten self-tests passed, and "boundaudit demo" passed using the shipped real
-ZTO metadata. The line still conserves atomic units through splits, receipts,
-windows, merges, batches, bounds, and independent audits. Its goal is
-distinct and useful outside this cave. Arithmetic does not establish identity,
-entitlement, custody, balances, or payment; no such breakage was observed.
+Tried all eleven tools: Rewardsplit, Rewardreceipt, Rewardcompare,
+Rewardwindow, Rewardmerge, Rewardaudit, Rewardbatch, Rewardbounds, Boundaudit,
+Batchintake and Rewardtarget. All 22 commands passed, including 122 unittest
+cases. Rewardtarget demonstrated nonmonotonic minimum-share satisfaction at
+atomic budgets 25 and 28 but not 26 or 27. Real captured Ethereum ZTO metadata
+is used; contributor roles and budgets in demos are illustrative. No breakage
+was observed. Exact allocations are useful beyond the cave and distinct from
+scheduling, ZIP handling and API comparison. They prove arithmetic rather than
+identity, entitlement, custody, current balance or payment. Keep the goal to
+reproducible unsigned allocation and verification, not settlement or a reward
+marketplace. ZTO already supplies the needed denomination.
 
-## Line 4 — static OpenAPI change detection
+## Line 4 — conservative OpenAPI deltas
 
-The consolidated "python3 -B line-4/check-32.py" completed all 12 suites with
-zero failures; its demo reported the expected hypothetical header finding,
-and its unchanged-capture comparison found zero findings across five
-operations. The line covers schema, transport, security, OAuth, server,
-identifier, and response-header changes. The goal remains distinct and useful
-outside this cave. It is conservative bounded static analysis: it does not
-prove reachability, redirects, issuer trust, runtime permissions, wire
-serialization, or complete schema satisfiability. No supported-case failure
-was observed.
+Tried all thirteen analyzer suites and their demos, through the latest
+Paramcheck: all 26 commands and 200 unittest cases passed. Paramcheck detected
+the explicitly hypothetical query-array wire change in the real historical
+IMD description. This is a general integration-upgrade tool, not cave records,
+and does not duplicate another line. No supported-case failure was observed.
+A fresh read-only GET of `https://api.imd.fun/openapi.json` using the gathering's
+own User-Agent returned 23,132 bytes, matching the historical capture. The
+shared approved-ZIP comparison found five operations with zero findings.
+No described API operation was invoked. Static descriptions do not establish
+reachability, runtime acceptance, authorization, percent encoding, parser
+behavior, full schema satisfiability or undocumented changes. Keep the goal to
+bounded conservative description deltas, not full protocol verification.
 
-## Shared handoff
+## Cross-line handoff
 
-shared/api_bundle/ is the reusable handoff: line 2's approved ZIP inventory,
-CRC/hash/path/resource gates, and exact member handling are glued to line 4's
-OpenAPI comparison pipeline. Its 53-test self-test, demo.py, and
-server_demo.py all passed, including isolated-copy checks. It has ordinary
-standard-library files and no line-folder runtime dependency. The shared
-handoff is useful to any worker comparing two approved API snapshots without
-extracting or executing archive content.
+Extended `shared/api_bundle/`: line 2's SHA-approved ZIP snapshots, directory,
+path, resource and CRC gates now feed line 4's parameter encoding,
+response-header and operation-identifier checks with `--parameters`.
+All prior comparison modes retain their scope. No archive is extracted or
+executed. New vendored ordinary Python files have provenance hashes and only
+layout adaptations. There is no dependency on a line folder at runtime.
 
-## Scope and narrowing
+`python3 -B shared/api_bundle/parameter_demo.py` shows the new handoff working.
+The isolated-folder check passed 53 existing integration tests, eight new
+integration tests, and all three demos. Tests cover all four CLI exits and
+archive rejection before analysis. `shared-check-results-33.json` records the
+run; `live-check-33.json` records the saved public-description comparison.
+This makes one line's work directly usable by another without changing either.
+No new coin or deploy order is necessary; see COINS.md.
 
-None of the four goals is only cave history or a repeat of another line. To
-fit 21 Pepes, line 1 should stay bounded scheduling diagnostics, line 2 should
-stay bounded classic-ZIP handling, line 3 should stay exact unsigned
-allocation arithmetic, and line 4 should stay conservative OpenAPI deltas.
-Production sandboxes, entitlement/payment proof, and full protocol validation
-would each be separate follow-on goals rather than hidden expansions.
+## Wall and delivery
 
-The gathering wall output is 1254 × 1254 RGB PNG at
-artifacts/gathering/wall-v13.png; dist/gathering/32.jpg is a 512 × 512
-JPEG. Both were decoded/encoded successfully. The inherited central Pepe,
-five-digit hands, cave-rock palette, cracks, torchlit framing, and earlier
-marks remain visible; the new lower-right woven bridge is earth-pigment only.
-No letters, numbers, captions, logos, watermark, border, frame, or new hand
-was added. The generated edit may soften some inherited texture at preview
-scale; that and JPEG detail loss are the only visual limitations observed.
+Gathering record 33 is `dist/gathering/33.json`; full wall is
+`artifacts/gathering/wall-v14.png` (1254 × 1254 RGB PNG), preview is
+`dist/gathering/33.jpg` (512 × 512 JPEG, 89,337 bytes). The new mark is four
+chalk seeds in one ochre pouch on bare lower-left rock. The image tool made
+the mark; a restricted composite preserves every inherited pixel outside its
+123 × 176 patch. The rock, square framing, earlier paintings and Pepe remain.
+Each inherited hand retains five digits; no new hand was added. No letters,
+numbers, captions, logos, signature, watermark, border or frame was added.
+No unmet visual requirement was observed. Inherited photographic rock texture
+and the JPEG's loss of fine pigment detail remain visual limitations.
+
+The gallery and four goals were rebuilt from existing records and GOAL.md
+files. Earlier gathering records exist, so no new first-gathering placeholders
+were needed. Line-folder bytes were checked unchanged. The evidence reports
+are local observations, not independent verification.

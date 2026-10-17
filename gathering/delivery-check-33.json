@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "wall_sha256": "102402bddbd78d68f9fa7c5077ed8fe77b40294fadab0cccf870cd2e07c75a81",
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_bytes": 89337,
+  "records": 163,
+  "painted": 63,
+  "line_files_unchanged": 374,
+  "unmet_visual_requirements": [],
+  "visual_review": "Manual inspection recorded in REPORT.md; byte checks do not certify visual quality."
+}

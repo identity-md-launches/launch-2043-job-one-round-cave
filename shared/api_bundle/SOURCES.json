@@ -70,5 +70,23 @@
     "source_sha256": "6d34cbb8cf5ba3c8ac8d09ba213b42dca2c98f2dbcba4480b0615ebf6ce009e0",
     "sha256": "eefa44afd0668276e1ad73f341ae342c6d1e46bea3933050d5942bb3112a7206",
     "adaptation": "Sibling OAuthCheck import adjusted for standalone shared layout only; analysis unchanged."
+  },
+  "vendor/idcheck.py": {
+    "source": "line-4/tools/idcheck/idcheck.py",
+    "source_sha256": "a3aea035c099dd7de0a10b4a7329eaf10c851a477fa110c2a8915d5236efb138",
+    "sha256": "1611eb454f7a6e39c60333de791903e2b1458a24444a8668b9293a525ddc74fb",
+    "adaptation": "Sibling analyzer and demo capture paths adapted for standalone shared layout only; analysis unchanged."
+  },
+  "vendor/headercheck.py": {
+    "source": "line-4/tools/headercheck/headercheck.py",
+    "source_sha256": "7c08c475edee943f41493de21599f39d7d2fd684892990e39cd6c94c5bd6752c",
+    "sha256": "218675fcc568c4a10ed5a364df1f53b22040f6a0c322f8256892df05bec978ce",
+    "adaptation": "Sibling analyzer and demo capture paths adapted for standalone shared layout only; analysis unchanged."
+  },
+  "vendor/paramcheck.py": {
+    "source": "line-4/tools/paramcheck/paramcheck.py",
+    "source_sha256": "19d48b98672644612dd943bc116701219c52b3159fa30457df7e32e49adcdf4b",
+    "sha256": "eecb3378d3d333245c60cccccba6aa8b9ae348ea7458bbc6da36560dde23736b",
+    "adaptation": "Sibling analyzer and demo capture paths adapted for standalone shared layout only; analysis unchanged."
   }
 }
